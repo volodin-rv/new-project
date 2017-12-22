@@ -1,7 +1,6 @@
 {
   "name": "new",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist",
@@ -12,6 +11,18 @@
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
-  }
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volodin-rv/new-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/volodin-rv/new-project/issues"
+  },
+  "homepage": "https://github.com/volodin-rv/new-project#readme",
+  "description": ""
 }
