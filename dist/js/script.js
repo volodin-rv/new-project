@@ -1,5 +1,9 @@
 "use strict";
 
-var a = 5;
-var b = 5;
-var PI = 3.14;
+var array = [1, 3, 4];
+
+function name(a, b, c) {
+  alert(a + b + c);
+}
+
+name.apply(undefined, array);

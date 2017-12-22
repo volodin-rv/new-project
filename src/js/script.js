@@ -1,3 +1,7 @@
-let a = 5;
-let b = 5;
-const PI = 3.14;
+let array = [1, 3, 4];
+
+function name(a, b, c) {
+  alert(a+b+c);
+}
+
+name(...array);
