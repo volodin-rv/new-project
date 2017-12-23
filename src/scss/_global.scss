@@ -1,0 +1,46 @@
+@import "media";
+/*-------------------------------------------------little reset-----------------------------------------------------*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, p, blockquote, table, th, td, embed, object, figure, select, ul li ul, ul li ol, ul li ul li, ul li ol li{
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+fieldset, img, abbr{
+  border: none;
+}
+ul{
+  list-style: none;
+}
+button{
+  border: none;
+}
+
+/* floats */
+.left{
+  float: left !important;
+}
+.right{
+  float: right !important;
+}
+
+/* text align */
+.text-left{
+  text-align: left !important;
+}
+.text-right{
+  text-align: right !important;
+}
+.text-center{
+  text-align: center !important;
+}
+.bold{
+  font-weight: bold !important;
+}
+
+/*------------------------------------------------polygraph--------------------------------------------------*/

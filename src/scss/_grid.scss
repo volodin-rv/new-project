@@ -1,0 +1,58 @@
+/*------------------------------------------------------ row -----------------------------------------------------*/
+$row-width: 1024px;
+
+.row{
+  @include clearfix;
+  margin: 0 auto;
+  max-width: $row-width;
+  width: 100%;
+}
+
+/*----------------------------------------------------- columns ---------------------------------------------------*/
+.columns, .column{
+  float: left;
+  padding: 0 .625rem;
+  position: relative;
+}
+
+.column{
+  &:first-child{
+    padding-left: 0;
+  }
+  &:last-child{
+    padding-right: 0;
+  }
+}
+
+[class*="column"] + [class*="column"]:last-child{
+  float: right;
+}
+[class*="column"] + [class*="column"].end{
+  float: left;
+}
+
+/*---------------------------------------------------- grid -------------------------------------------------------*/
+$total-columns: 12;
+@mixin grid-class($size){
+  @for $i from 1 through $total-columns{
+    .#{$size}-#{$i}{
+      //position: relative;
+      width: percentage($i/$total-columns);
+    }
+  }
+}
+
+body{
+  @include respond-to(custom-min-up){
+    @include grid-class(xsmall);
+  }
+  @include respond-to(custom-small-up){
+    @include grid-class(small);
+  }
+  @include respond-to(custom-medium-up){
+    @include grid-class(medium);
+  }
+  @include respond-to(custom-large-up){
+    @include grid-class(large);
+  }
+}

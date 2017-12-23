@@ -1,0 +1,32 @@
+@mixin transition($property:all, $speed:300ms, $ease:ease-out){
+  transition: $property $speed $ease;
+}
+
+@mixin transform-translate($x-translate, $y-translate) {
+  -webkit-transform: translate($x-translate, $y-translate);
+  -moz-transform: translate($x-translate, $y-translate);
+  -ms-transform: translate($x-translate, $y-translate);
+  -o-transform: translate($x-translate, $y-translate);
+  transform: translate($x-translate, $y-translate);
+}
+
+@mixin transform-scale($x-scale, $y-scale) {
+  -webkit-transform: scale($x-scale, $y-scale);
+  -moz-transform: scale($x-scale, $y-scale);
+  -ms-transform: scale($x-scale, $y-scale);
+  -o-transform: scale($x-scale, $y-scale);
+  transform: scale($x-scale, $y-scale);
+}
+
+@mixin clearfix{
+  &:before, &:after{
+    content: " ";
+    display: table;
+  }
+  &:after{
+    clear: both;
+  }
+}
+.clearfix{
+  @include clearfix;
+}

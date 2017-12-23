@@ -1,3 +1,183 @@
-main .block {
-  color: #000000;
-  background-color: #fff; }
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/*for custom media for resizing window on desktop*/
+/*-------------------------------------------------little reset-----------------------------------------------------*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, p, blockquote, table, th, td, embed, object, figure, select, ul li ul, ul li ol, ul li ul li, ul li ol li {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+fieldset, img, abbr {
+  border: none; }
+
+ul {
+  list-style: none; }
+
+button {
+  border: none; }
+
+/* floats */
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+/* text align */
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.bold {
+  font-weight: bold !important; }
+
+/*------------------------------------------------polygraph--------------------------------------------------*/
+/*------------------------------------------------------ row -----------------------------------------------------*/
+.row {
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+/*----------------------------------------------------- columns ---------------------------------------------------*/
+.columns, .column {
+  float: left;
+  padding: 0 .625rem;
+  position: relative; }
+
+.column:first-child {
+  padding-left: 0; }
+
+.column:last-child {
+  padding-right: 0; }
+
+[class*="column"] + [class*="column"]:last-child {
+  float: right; }
+
+[class*="column"] + [class*="column"].end {
+  float: left; }
+
+/*---------------------------------------------------- grid -------------------------------------------------------*/
+@media only screen and (min-width: 0) {
+  body .xsmall-1 {
+    width: 8.33333%; }
+  body .xsmall-2 {
+    width: 16.66667%; }
+  body .xsmall-3 {
+    width: 25%; }
+  body .xsmall-4 {
+    width: 33.33333%; }
+  body .xsmall-5 {
+    width: 41.66667%; }
+  body .xsmall-6 {
+    width: 50%; }
+  body .xsmall-7 {
+    width: 58.33333%; }
+  body .xsmall-8 {
+    width: 66.66667%; }
+  body .xsmall-9 {
+    width: 75%; }
+  body .xsmall-10 {
+    width: 83.33333%; }
+  body .xsmall-11 {
+    width: 91.66667%; }
+  body .xsmall-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 480px) {
+  body .small-1 {
+    width: 8.33333%; }
+  body .small-2 {
+    width: 16.66667%; }
+  body .small-3 {
+    width: 25%; }
+  body .small-4 {
+    width: 33.33333%; }
+  body .small-5 {
+    width: 41.66667%; }
+  body .small-6 {
+    width: 50%; }
+  body .small-7 {
+    width: 58.33333%; }
+  body .small-8 {
+    width: 66.66667%; }
+  body .small-9 {
+    width: 75%; }
+  body .small-10 {
+    width: 83.33333%; }
+  body .small-11 {
+    width: 91.66667%; }
+  body .small-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 640px) {
+  body .medium-1 {
+    width: 8.33333%; }
+  body .medium-2 {
+    width: 16.66667%; }
+  body .medium-3 {
+    width: 25%; }
+  body .medium-4 {
+    width: 33.33333%; }
+  body .medium-5 {
+    width: 41.66667%; }
+  body .medium-6 {
+    width: 50%; }
+  body .medium-7 {
+    width: 58.33333%; }
+  body .medium-8 {
+    width: 66.66667%; }
+  body .medium-9 {
+    width: 75%; }
+  body .medium-10 {
+    width: 83.33333%; }
+  body .medium-11 {
+    width: 91.66667%; }
+  body .medium-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 1024px) {
+  body .large-1 {
+    width: 8.33333%; }
+  body .large-2 {
+    width: 16.66667%; }
+  body .large-3 {
+    width: 25%; }
+  body .large-4 {
+    width: 33.33333%; }
+  body .large-5 {
+    width: 41.66667%; }
+  body .large-6 {
+    width: 50%; }
+  body .large-7 {
+    width: 58.33333%; }
+  body .large-8 {
+    width: 66.66667%; }
+  body .large-9 {
+    width: 75%; }
+  body .large-10 {
+    width: 83.33333%; }
+  body .large-11 {
+    width: 91.66667%; }
+  body .large-12 {
+    width: 100%; } }
